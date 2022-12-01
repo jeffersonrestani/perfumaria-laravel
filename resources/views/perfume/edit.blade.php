@@ -30,7 +30,7 @@
 
                                         <div class="form-group">
                                             <label for="fabrication">Ano de Fabricação:</label>
-                                            <input type="text" name="fabrication" id="fabrication" class="form-control"
+                                            <input type="text" name="fabrication" id="fabrication" class="form-control"  maxlength="4"
                                                 value="{{ old('fabrication') ? old('fabrication') : $perfume->fabrication }}">
                                             @error('fabrication')
                                                 <div style="color:red">

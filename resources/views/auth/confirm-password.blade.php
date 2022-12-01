@@ -1,13 +1,26 @@
+<link rel="stylesheet" href="/css/all.mim.css">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="/css/sb-admin-2.min.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/material-design-iconic-font.min.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/hamburgers.min.css">
+<link rel="stylesheet" href="/css/animsition.min.css">
+<link rel="stylesheet" href="/css/select2.min.css">
+<link rel="stylesheet" href="/css/daterangepicker.css">
+<link rel="stylesheet" href="/css/utilLogin.css">
+<link rel="stylesheet" href="/css/mainLogin.css">
+
 <x-guest-layout>
     <x-auth-card>
         <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-            </a>
+
         </x-slot>
 
         <div class="mb-4 text-sm text-gray-600">
-            {{ __('This is a secure area of the application. Please confirm your password before continuing.') }}
+            {{ __('Esta é uma área segura do aplicativo. Por favor, confirme sua senha antes de continuar.') }}
         </div>
 
         <form method="POST" action="{{ route('password.confirm') }}">

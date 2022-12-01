@@ -18,22 +18,26 @@
                                                 <th>ID</th>
                                                 <th>Nome</th>
                                                 <th>Descrição</th>
-                                                <th colspan="2" align="center">Ações</th>
+                                                <th></th>
                                             </tr>
                                             @foreach ($brands as $b)
                                                 <tr align="center">
                                                     <td>{{ $b->id }} </td>
                                                     <td>{{ $b->name }} </td>
                                                     <td>{{ $b->description }}</td>
-                                                    <td> <a href="{{ route('brand.show', $b->id) }}">Exibir</a> </td>
-                                                    <td> <a href="{{ route('brand.edit', $b->id) }}">Editar</a> </td>
+                                                    <td> <a class="btn btn-info" href="{{ route('brand.show', $b->id) }}">Exibir</a> </td>
+                                                    <td> <a class="btn btn-warning" href="{{ route('brand.edit', $b->id) }}">Editar</a> </td>
+                                                    <td>
+                                                        <form action="{{ route('brand.destroy', $b->id) }}" method="post">
+
+                                                            @csrf
+                                                            @method('DELETE')
+                                                            <input class="btn btn-danger" type="submit" value="Excluir">
+                                                        </form>
+                                                    </td>
                                                 </tr>
                                             @endforeach
                                         </table>
-                                        {{-- creating the links to pagination --}}
-                                        <div class="row">
-                                             {{-- {{ $brands->links('pagination::bootstrap-5') }} --}}
-                                        </div>
                                     @else
                                         <h3>Não há marcas cadastradas!</h3>
                                     @endif

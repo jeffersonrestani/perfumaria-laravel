@@ -20,7 +20,7 @@
                                             <th>Nome</th>
                                             <th>Ano de Lançamento</th>
                                             <th>Marca</th>
-                                            <th colspan="2">Ações</th>
+                                            <th colspan="3"></th>
                                         </tr>
                                         @foreach ($perfumes as $p)
                                             <tr align="center">
@@ -28,14 +28,20 @@
                                                 <td>{{ $p->name }}</td>
                                                 <td>{{ $p->fabrication }}</td>
                                                 <td>{{ $p->brand->name }}</td>
-                                                <td align="center"> <a href="{{ route('perfume.show', $p->id) }}">Exibir</a> </td>
-                                                <td align="center"> <a href="{{ route('perfume.edit', $p->id) }}">Editar</a> </td>
+                                                <td> <a class="btn btn-info" href="{{ route('perfume.show', $p->id) }}">Exibir</a> </td>
+                                                <td> <a class="btn btn-warning" href="{{ route('perfume.edit', $p->id) }}">Editar</a> </td>
+                                                <td>
+                                                    <form action="{{ route('perfume.destroy', $p->id) }}" method="post">
+
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <input class="btn btn-danger" type="submit" value="Excluir">
+                                                    </form>
+                                                </td>
                                             </tr>
                                         @endforeach
                                     </table>
-                                    <div class="row">
-                                        {{$perfumes->links('pagination::bootstrap-5')}}
-                                    </div>
+
                                 @else
                                     <h3>Não há perfumes cadastrados!</h3>
                                 @endif
