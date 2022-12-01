@@ -19,7 +19,7 @@
 
                                         <div class="form-group">
                                             <label for="name">Nome</label>
-                                            <input type="text" name="name" id="name" class="form-control"
+                                            <input type="text" name="name" id="name" class="form-control" required
                                                 value="{{ old('name') ? old('name') : $perfume->name }}">
                                             @error('name')
                                                 <div style="color:red">
@@ -30,7 +30,7 @@
 
                                         <div class="form-group">
                                             <label for="fabrication">Ano de Fabricação:</label>
-                                            <input type="text" name="fabrication" id="fabrication" class="form-control"  maxlength="4"
+                                            <input type="text" name="fabrication" id="fabrication" class="form-control"  maxlength="4" required
                                                 value="{{ old('fabrication') ? old('fabrication') : $perfume->fabrication }}">
                                             @error('fabrication')
                                                 <div style="color:red">

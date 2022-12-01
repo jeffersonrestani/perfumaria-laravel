@@ -19,7 +19,7 @@
 
                                     <div class="form-group">
                                         <label for="name">Nome: </label>
-                                        <input type="text" name="name" id="name" class="form-control"  value="{{old('name')}}">
+                                        <input type="text" name="name" id="name" class="form-control" required  value="{{old('name')}}">
                                         @error('name')
                                             <div style="color:red">
                                                 {{ $message }}
@@ -30,7 +30,7 @@
 
                                     <div class="form-group">
                                         <label for="fabrication">Ano de Lançamento:</label>
-                                        <input type="number" name="fabrication" id="fabrication" class="form-control" maxlength="4" value="{{old('fabrication')}}">
+                                        <input type="number" name="fabrication" id="fabrication" class="form-control" maxlength="4" required value="{{old('fabrication')}}">
                                         @error('year')
                                             <div style="color:red">
                                                 {{ $message }}

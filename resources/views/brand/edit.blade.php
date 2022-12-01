@@ -8,6 +8,7 @@
                     <div class="card-body p-4">
                         <div class="justify-content-center">
                             <div class="col-lg-12">
+
                                 <div class="content p-1">
 
                                     <h2>Cadastrar Marca</h2>
@@ -20,7 +21,7 @@
 
                                         <div class="form-group">
                                             <label for="name">Nome</label>
-                                            <input type="text" name="name" id="name" class="form-control"
+                                            <input type="text" name="name" id="name" class="form-control" required
                                                 value="{{ old('name') ? old('name') : $brand->name }}">
                                             @error('name')
                                                 <div style="color:red">
@@ -31,7 +32,7 @@
 
                                         <div class="form-group">
                                             <label for="description">Descrição:</label>
-                                            <input type="text" name="description" id="description" class="form-control"
+                                            <input type="text" name="description" id="description" class="form-control" required
                                                 value="{{ old('description') ? old('description') : $brand->description }}">
                                             @error('color')
                                                 <div style="color:red">
