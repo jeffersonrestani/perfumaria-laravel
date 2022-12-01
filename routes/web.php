@@ -37,4 +37,3 @@ Route::resource('/brand',BrandController::class);
 
 Route::resource('/perfume',PerfumeController::class);
 
-Route::resource('/inicial',InicialController::class);

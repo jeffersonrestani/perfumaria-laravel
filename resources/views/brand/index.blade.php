@@ -1,4 +1,4 @@
-@extends('base')
+@extends('dashboard')
 
 @section('content-here')
     <div class="container">

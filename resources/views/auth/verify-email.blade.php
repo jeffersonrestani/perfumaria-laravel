@@ -1,3 +1,18 @@
+<link rel="stylesheet" href="/css/all.mim.css">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="/css/sb-admin-2.min.css">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/material-design-iconic-font.min.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/hamburgers.min.css">
+<link rel="stylesheet" href="/css/animsition.min.css">
+<link rel="stylesheet" href="/css/select2.min.css">
+<link rel="stylesheet" href="/css/daterangepicker.css">
+<link rel="stylesheet" href="/css/utilLogin.css">
+<link rel="stylesheet" href="/css/mainLogin.css">
+
 <x-guest-layout>
     <x-auth-card>
         <x-slot name="logo">
