@@ -25,17 +25,13 @@
 
                 <div id="wrapper">
                     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion">
-                        <br /><br /><br />
+                        <br/><br/>
                         <a class="sidebar-brand d-flex align-items-center justify-content-center">
                             <div class="sidebar-brand-icon rotate-n-0">
                                 <img src=/img/perfume-1.png width=100%>
                             </div>
-
                         </a>
-
-
-                    </br></br></br>
-
+                    </br></br>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('brand.create') }}">
                                     <i class="fas fa-fw fa-chart-area"></i>
@@ -93,4 +89,3 @@
         </h2>
     </x-slot>
 </x-app-layout>
-    

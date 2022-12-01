@@ -3,7 +3,7 @@
 @section('content-here')
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-xl-12 col-lg-12 col-md-12">
+            <div class="col-xl-12 col-lg-8 col-md-8">
                 <div class="card o-hidden border-0 shadow-lg my-5">
                     <div class="card-body p-4">
                         <div class="justify-content-center">
@@ -18,7 +18,7 @@
                                                 <th>ID</th>
                                                 <th>Nome</th>
                                                 <th>Descrição</th>
-                                                <th></th>
+                                                <th colspan="3"></th>
                                             </tr>
                                             @foreach ($brands as $b)
                                                 <tr align="center">

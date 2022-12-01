@@ -3,7 +3,7 @@
 @section('content-here')
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-xl-12 col-lg-12 col-md-12">
+            <div class="col-xl-12 col-lg-8 col-md-8">
                 <div class="card o-hidden border-0 shadow-lg my-5">
                     <div class="card-body p-4">
                         <div class="justify-content-center">
